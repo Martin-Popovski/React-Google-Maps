@@ -1,0 +1,28 @@
+.popup {
+  position: relative;
+  left: -130px;
+  top: -150px;
+  width: 260px;
+}
+
+.popupClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popupInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.popupInfo p { 
+  margin: 5px 0px;
+}
+
+
