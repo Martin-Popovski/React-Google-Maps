@@ -4,9 +4,7 @@ import Card from "../Card/Card";
 const Popup = (props: any) => (
   <div className={styles.popup}>
     <Card>
-      <span onClick={props.click} className={styles.popupClose}>
-        x
-      </span>
+      <span onClick={props.click} className={styles.popupClose}/>
       {props.popUpInfo.company != null && (
         <div className={styles.popupInfo}>
           <img src={props.popUpInfo.company.logoPath} alt="Company image"/>
@@ -24,7 +22,7 @@ const Popup = (props: any) => (
           </p>
           <p>
             <strong>Agicultural types: </strong>
-            {props.popUpInfo.company.agricultureTypes.length > 0 ? (
+            {props.popUpInfo.company.agricultureTypes.length ? (
               props.popUpInfo.company.agricultureTypes.map((type: string) => {
                 return <span key={type}>{type} </span>;
               })
@@ -34,7 +32,7 @@ const Popup = (props: any) => (
           </p>
           <p>
             <strong>Production types: </strong>
-            {props.popUpInfo.company.productionTypes.length > 0 ? (
+            {props.popUpInfo.company.productionTypes.length ? (
               props.popUpInfo.company.productionTypes.map((type: string) => {
                 return <span key={type}>{type} </span>;
               })

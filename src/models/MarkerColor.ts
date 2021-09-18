@@ -3,6 +3,6 @@ export enum MarkerColor {
     Blue = "blue",
     Green = "green",
     Grey = "grey",
-    Orange = "green",
-    Yellow = "grey",
+    Orange = "orange",
+    Yellow = "yellow",
 }

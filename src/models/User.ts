@@ -24,5 +24,4 @@
         primaryTradeType: string;
         userId: number;
         userTypeIdentifier: string;
-        userMarkerColor?:any;
     }
