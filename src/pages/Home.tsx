@@ -4,19 +4,18 @@ import UsersRepository from "../api/UsersRepository";
 import { GoogleMap } from "../components/GoogleMap/GoogleMap";
 import Spinner from "../components/Spinner/Spinner";
 
-
 const Home = () => {
   const [users, setUsers] = useState([]);
-  const { sendRequest, isLoading } = useHttp();
+  const { sendRequest, isLoading, error } = useHttp();
 
   useEffect(() => {
     async function getUsers() {
       const response = await sendRequest(UsersRepository.get());
 
-      if (response) {
+      if (response && !error) {
         setUsers(response.data);
       } else {
-        // Show error notification in real app
+        // Show error in real app
       }
     }
     getUsers();
