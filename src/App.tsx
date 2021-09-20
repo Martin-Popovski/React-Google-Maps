@@ -5,7 +5,7 @@ import Home from './pages/Home';
 function App() {
   return (
     <React.Fragment>
-      <Navigation title={'Trader App'}/>
+      <Navigation title={'React Google Maps'}/>
       <main>
         <Home/>
       </main>

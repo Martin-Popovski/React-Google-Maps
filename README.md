@@ -1,4 +1,4 @@
-# Trader app
+# React Google Maps
 
 ## Project setup
 ```
